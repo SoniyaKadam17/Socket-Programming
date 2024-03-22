@@ -1,4 +1,4 @@
-# # # # # # # # # # # # # # # # # # # # # # # # # # SONIYA NITIN KADAM NEU ID - 002818960 EECE7374 # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # SONIYA NITIN KADAM EECE7374 # # # # # # # # # # # # # # # # # # # # # # # 
 
 # According to the assignment we have to create a client that will connect to the server which will give our client mathematical equations.
 # After receiving these mathematical equations, our client is supposed to answer a few. After this the server will send a secret key, 
@@ -18,14 +18,14 @@ import socket # Socket module provides functions for creating and managing netwo
 
 server_hostname = '129.10.132.64' #Using the server IP Address for later use
 default_server_port = 5206 #Cummunicationg with port number 5208 of the server for later use
-NU_ID = '002818960'# Assigning NEU ID to variable name NU_ID for later use
+NU_ID = 'ADD YOU ID HERE'# Assigning NEU ID to variable name NU_ID for later use (PLEASE ADD YOUR OWN ID)
 list_of_operations = [ '+' , '-' , '*' , '/' ] #Assigning multiple operations to be done in a List
 
 clientSocket = socket.socket( socket.AF_INET , socket.SOCK_STREAM ) # Here AF_INET is to connect with a IPv4 address & SOCK_STREAM to for a TCP connection
 clientSocket.connect((server_hostname, default_server_port)) # Defining the host name and port number to establish the connection
 
 
-message = "EECE7374 INTR 002818960" #First message that the client will send to the server 
+message = "EECE7374 INTR - YOUR ID HERE" #First message that the client will send to the server (PLEASE ADD YOUR OWN ID)
 clientSocket.send(message.encode( 'utf-8')) #Sending the message to the server & to the proper port number
 
 while True:
